@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+      <Version>2.0.1</Version>
+      <Authors>Jan Škoruba</Authors>
+      <PackageTags>IdentityServer4 Admin OpenIDConnect OAuth2 Identity</PackageTags>
+      <Description>Entity Framework layer for the administration of the IdentityServer4 and Asp.Net Core Identity with SqlServer support</Description>
+      <PackageLicenseUrl>https://github.com/skoruba/IdentityServer4.Admin/blob/master/LICENSE.md</PackageLicenseUrl>
+      <PackageProjectUrl>https://github.com/skoruba/IdentityServer4.Admin</PackageProjectUrl>
+      <PackageIconUrl>https://raw.githubusercontent.com/skoruba/IdentityServer4.Admin/master/docs/Images/TokenProject.Admin-Logo-Nuget.png</PackageIconUrl>
+  </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.5" />
+        <PackageReference Include="IdentityServer4.EntityFramework.Storage" Version="4.1.2" />
+        <PackageReference Include="Skoruba.IdentityServer4.Admin.EntityFramework" Version="2.0.1" />
+        <PackageReference Include="Skoruba.IdentityServer4.Admin.EntityFramework.Identity" Version="2.0.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\TokenProject.Admin.EntityFramework.Shared\TokenProject.Admin.EntityFramework.Shared.csproj" />
+    </ItemGroup>
+
+</Project>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
