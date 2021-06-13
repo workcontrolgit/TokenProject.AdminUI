@@ -70,6 +70,24 @@
           "role",
           "name"
         ]
+      },
+      {
+        "Name": "app.api.employeeprofile.write",
+        "DisplayName": "app.api.employeeprofile.write",
+        "Required": true,
+        "UserClaims": [
+          "role",
+          "name"
+        ]
+      },
+      {
+        "Name": "app.api.employeeprofile.read",
+        "DisplayName": "app.api.employeeprofile.read",
+        "Required": true,
+        "UserClaims": [
+          "role",
+          "name"
+        ]
       }
     ],
     "ApiResources": [
@@ -77,6 +95,12 @@
         "Name": "MyClientId_api",
         "Scopes": [
           "MyClientId_api"
+        ]
+      },
+      {
+        "Name": "app.api.employeeprofile",
+        "Scopes": [
+          "app.api.employeeprofile.read"
         ]
       }
     ],
@@ -106,6 +130,32 @@
         "AllowedCorsOrigins": [
           "https://localhost:44303",
           "https://cat-token-admin.azurewebsites.net"
+        ],
+        "AllowedScopes": [
+          "openid",
+          "email",
+          "profile",
+          "roles"
+        ]
+      },
+      {
+        "ClientId": "React.Spa",
+        "ClientName": "React.Spa",
+        "ClientUri": "http://localhost:3000",
+        "AllowedGrantTypes": [
+          "authorization_code"
+        ],
+        "RequirePkce": true,
+        "RequireClientSecret": false,
+        "RedirectUris": [
+          "http://localhost:3000/signin-callback.html",
+          "http://localhost:3000/silentRenew/silentRenew.html"
+        ],
+        "PostLogoutRedirectUris": [
+          "http://localhost:3000"
+        ],
+        "AllowedCorsOrigins": [
+          "http://localhost:3000"
         ],
         "AllowedScopes": [
           "openid",
