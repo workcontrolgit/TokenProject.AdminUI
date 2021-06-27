@@ -161,7 +161,8 @@
           "openid",
           "email",
           "profile",
-          "roles"
+          "roles",
+          "app.api.employeeprofile.read"
         ]
       },
       {
