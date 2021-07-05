@@ -86,6 +86,10 @@
       </EmbeddedResource>
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Log\" />
+    </ItemGroup>
+
 </Project>
 
 
